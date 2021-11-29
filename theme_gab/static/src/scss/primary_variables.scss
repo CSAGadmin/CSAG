@@ -1,0 +1,70 @@
+// Theme Colors
+$alpha:     #7d9623 !default;
+$beta:      #00374d !default;
+$gamma:     #780037 !default;
+$delta:     #f8f9fa !default;
+$epsilon:   #343a40 !default;
+
+$o-theme-color-palettes: (
+    (
+        'alpha': $alpha,
+        'beta': $beta,
+        'gamma': $gamma,
+        'delta': $delta,
+        'epsilon': $epsilon,
+    ),
+);
+
+// Theme Backgrounds & Text Colors
+$body:      #ffffff !default;
+$menu:      #f9f9f9 !default;
+$footer:    #343a40 !default;
+$text:      #212529 !default;
+$h1:        #212529 !default;
+$h2:        #212529 !default;
+$h3:        #212529 !default;
+$h4:        #212529 !default;
+$h5:        #212529 !default;
+$h6:        #212529 !default;
+
+$o-color-palettes: (
+    (
+		'body': $body,
+	    'menu': $menu,
+	    'footer': $footer,
+	    'text': $text,
+	    'h1':  $h1,
+	    'h2':  $h2,
+	    'h3':  $h3,
+	    'h4':  $h4,
+	    'h5':  $h5,
+	    'h6':  $h6,
+    ),
+);
+
+// State Colors
+$success:       #28a745 !default;
+$info:          #17a2b8 !default;
+$warning:       #ffc107 !default;
+$danger:        #dc3545 !default;
+
+
+
+// Footer Colors
+$footer-text-color:             #cccccc !default;
+$footer-h1-h6-color:            #eeeeee !default;
+$footer-awards-bg-color:        #2e3338 !default;
+$footer-copyright-bg-color:     #212529 !default;
+
+
+
+// Link Colors
+$link-color:                $alpha !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 5%) !default;
+$link-hover-decoration:     none !default;
+
+
+
+// Headings
+$headings-font-weight:        400 !default;

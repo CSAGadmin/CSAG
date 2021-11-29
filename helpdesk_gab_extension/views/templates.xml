@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+
+        <template id="ticket_submit" name="Helpdesk: Submit a Ticket GAB" inherit_id="website_helpdesk_form.ticket_submit">
+            <xpath expr="//form[@id='helpdesk_ticket_form']/*[1]" position="before">
+                
+                <div t-if="team.get_ticket_types() != None" class="form-group row form-field o_website_form_required">
+                    <div class="col-lg-3 col-md-4 text-right">
+                        <label class="col-form-label" for="ticket_type_id">Ticket Type</label>
+                    </div>
+                    <div class="col-lg-7 col-md-8">
+                        <select name="ticket_type_id" class="form-control o_website_form_input" required="1">
+                            <t t-foreach="team.get_ticket_types()" t-as="t">
+                                <option t-att-value="t['id']" t-att-selected="t['id'] == default_values.get('ticket_type_id', '')"><t t-esc="t['name']" /></option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

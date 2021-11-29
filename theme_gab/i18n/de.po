@@ -1,0 +1,236 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_gab
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-27 14:36+0000\n"
+"PO-Revision-Date: 2020-10-27 14:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.403_error_gab
+msgid "403: Forbidden"
+msgstr "403: Verboten"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.404_error_gab
+msgid "404: Page not found!"
+msgstr "404: Seite nicht gefunden!"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "<i class=\"fa fa-3x fa-facebook-square\" title=\"Follow us on Facebook\"/>"
+msgstr "<i class=\"fa fa-3x fa-facebook-square\" title=\"Folge uns auf Facebook\"/>"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "<i class=\"fa fa-3x fa-linkedin-square\" title=\"Follow us on LinkedIn\"/>"
+msgstr "<i class=\"fa fa-3x fa-linkedin-square\" title=\"Folge uns auf LinkedIn\"/>"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_ticket_rating_list_gab
+msgid "<i class=\"fa fa-arrow-circle-right\"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right\"/> Feedback ansehen"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.ticket_submited_gab
+msgid "<i class=\"fa fa-check-circle fa-2x text-success\" role=\"img\" aria-label=\"Success\"/>"
+msgstr "<i class=\"fa fa-check-circle fa-2x text-success\" role=\"img\" aria-label=\"Success\"/>"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_ticket_rating_list_gab
+msgid "<i class=\"fa fa-envelope\"/> Email:"
+msgstr "<i class=\"fa fa-envelope\"/> E-Mail:"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.portal_layout_gab
+msgid "<i class=\"fa fa-pencil\"/> Edit"
+msgstr "<i class=\"fa fa-pencil\"/> Bearbeiten"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.topmenu_language_switcher_gab
+msgid "<i class=\"fa fa-plus-circle\"/>Add a language..."
+msgstr "<i class=\"fa fa-plus-circle\"/> Sprache hinzufügen..."
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "<i class=\"fa fa-xing-square fa-3x\" title=\"Follow us on Xing\"/>"
+msgstr "<i class=\"fa fa-xing-square fa-3x\" title=\"Folge uns auf Xing\"/>"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_copyright_gab
+msgid "<span>Copyright &amp;copy;</span>"
+msgstr "<span>Copyright &amp;copy;</span>"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_copyright_gab
+msgid "Company name"
+msgstr "Unternehmensname"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_ticket_rating_list_gab
+msgid "Customer Satisfaction Ration:"
+msgstr "Kundenzufriedenheit:"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.publish_management_gab
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.publish_management_gab
+msgid "Edit in backend"
+msgstr "Im Backend bearbeiten"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Headquarter"
+msgstr "Zentrale"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Helpdesk"
+msgstr "Kundendienst"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Helpful links"
+msgstr "Hilfreiche Links"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Home"
+msgstr "Home"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_imprint_privacy_gab
+msgid "Imprint"
+msgstr "Impressum"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Login"
+msgstr "Login"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.ticket_submited_gab
+msgid "Our team will get right on it!"
+msgstr "Unser Team wird es sofort bearbeiten!"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.500_error_gab
+msgid "Please contact the server administrator or return to the Homepage"
+msgstr "Bitte kontaktieren Sie den Server-Administrator oder kehren Sie zur Homepage zurück"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_imprint_privacy_gab
+msgid "Privacy"
+msgstr "Datenschutz"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.publish_management_gab
+msgid "Published"
+msgstr "Veröffentlicht"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.footer_gab
+msgid "Stay in contact"
+msgstr "Bleib in Kontakt"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "Submit a Ticket (Advice Request)"
+msgstr "Senden Sie ein Ticket (Ratschlag)"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "Submit a Ticket (Change Request)"
+msgstr "Senden Sie ein Ticket (Veränderungsauftrag)"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "Submit a Ticket (Incident)"
+msgstr "Senden Sie ein Ticket (Ereignis)"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "Submit a Ticket (Service Request)"
+msgstr "Senden Sie ein Ticket (Dienstauftrag)"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_ticket_rating_list_gab
+msgid "Teams"
+msgstr "Teams"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.ticket_submited_gab
+msgid "Thank you for submitting your issue."
+msgstr "Vielen Dank für das Senden Ihres Problems."
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.403_error_gab
+msgid "The page you were looking for could not be authorized."
+msgstr "Die Seite, die Sie suchen konnte nicht authentifiziert werden."
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.404_error_gab
+msgid "The page you were looking for could not be found; it is possible you have typed the address incorrectly, but it has most probably been removed due to the recent website reorganisation."
+msgstr "Die gesuchte Seite wurde nicht gefunden. Möglicherweise haben Sie die Adresse falsch eingegeben, oder die Seite wurde aufgrund von Umstrukturierung der Website entfernt."
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.500_error_gab
+msgid "The server encountered an internal server error or misconfiguration and was unable to complete your request."
+msgstr "Der Server ist auf einen internen Fehler oder eine Fehlkonfiguration gestoßen und konnte Ihre Anfrage nicht abschließen."
+
+#. module: theme_gab
+#: model:ir.model,name:theme_gab.model_theme_utils
+msgid "Theme Utils"
+msgstr "Werkzeuge"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.portal_my_home_gab
+msgid "Tickets"
+msgstr "Tickets"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.publish_management_gab
+msgid "Unpublished"
+msgstr "Unveröffentlicht"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.helpdesk_team_gab
+msgid "View my Tickets"
+msgstr "Meine Tickets anschauen"
+
+#. module: theme_gab
+#: model:ir.actions.act_url,name:theme_gab.action_website
+msgid "Website"
+msgstr "Webseite"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.portal_layout_gab
+msgid "Your Details"
+msgstr "Ihre Angaben"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.portal_my_home_gab
+msgid "Your Documents"
+msgstr "Ihre Dokumente"
+
+#. module: theme_gab
+#: model_terms:theme.ir.ui.view,arch:theme_gab.ticket_submited_gab
+msgid "Your Ticket Number is"
+msgstr "Ihre Ticketnummer ist"

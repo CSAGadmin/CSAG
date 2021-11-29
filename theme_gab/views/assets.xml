@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom bootstrap variables -->
+    <template id="variables_gab" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_gab/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Custom styles  -->
+    <template id="styles_gab" inherit_id="website.assets_frontend" name="Styles GAB">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_gab/static/src/scss/gab_styles.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Custom scripts  -->
+    <template id="scripts_gab" inherit_id="website.assets_frontend" name="Scripts GAB">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_gab/static/lib/jquery-scrollup/jquery.scrollUp.js" />
+            <script type="text/javascript" src="/theme_gab/static/src/js/scrollup.js" />
+        </xpath>
+    </template>
+
+</odoo>

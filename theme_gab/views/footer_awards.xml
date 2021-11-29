@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom footer -->
+    <template id="footer_awards_gab" inherit_id="website.footer_custom" name="Footer Awards GAB">
+
+        <!-- Assign an id -->
+        <!--
+        <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
+            <attribute name="id">gab_footer_awards</attribute>
+        </xpath>
+        -->
+
+        <!-- Add element after footer-id -->
+        <xpath expr="//div[@id='wrapwrap']/footer/div[@id='footer']" position="after">
+            <section class="oe_structure"/>
+
+            <!-- Any content here (also able to use building blocks in here) -->
+            <section class="pt24 pb24 footer_awards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 pt24 pb24">
+                            <img src="/theme_gab/static/src/img/mp1.png" class="img img-fluid"/>
+                        </div>
+                        <div class="col-lg-4 pt24 pb24">
+                            <img src="/theme_gab/static/src/img/mp2.png" class="img img-fluid"/>
+                        </div>
+                        <div class="col-lg-4 pt24 pb24">
+                            <img src="/theme_gab/static/src/img/mp3.png" class="img img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </xpath>
+
+    </template>
+
+</odoo>

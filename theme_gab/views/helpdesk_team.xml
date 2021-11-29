@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom Portal Template Content -->
+    <template id="helpdesk_team_gab" inherit_id="website_helpdesk.team" name="Helpdesk Team GAB">
+
+        <!-- Replace Content -->
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+            <div id="wrap" class="container">
+                <div class="row mb16">
+                    <div class="col-md-9">
+                        <h2 class="o_page_header mt0 d-none" id="team-page"/>
+                        <div class="oe_structure" id="oe_structure_website_helpdesk_team_1"/>
+                        <t t-if="team.use_website_helpdesk_form">
+
+
+                            <div class="row mt32">
+                                <div class="col-lg-6">
+                                    <div class="card helpdesk-card">
+                                        <div class="card-body">
+                                            <img src="/theme_gab/static/src/img/icon_02.png" class="helpdesk-card-img-small img img-fluid d-block mx-auto"/>
+                                            <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit?ticket_type_id=1">
+                                                <button t-attf-class="btn btn-lg btn-primary btn-block btn-small-text mt8">Submit a Ticket (Service Request)</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card helpdesk-card">
+                                        <div class="card-body">
+                                            <img src="/theme_gab/static/src/img/icon_02.png" class="helpdesk-card-img-small img img-fluid d-block mx-auto"/>
+                                            <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit?ticket_type_id=5">
+                                                <button t-attf-class="btn btn-lg btn-primary btn-block btn-small-text mt8">Submit a Ticket (Incident)</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card helpdesk-card">
+                                        <div class="card-body">
+                                            <img src="/theme_gab/static/src/img/icon_02.png" class="helpdesk-card-img-small img img-fluid d-block mx-auto"/>
+                                            <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit?ticket_type_id=7">
+                                                <button t-attf-class="btn btn-lg btn-primary btn-block btn-small-text mt8">Submit a Ticket (Advice Request)</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card helpdesk-card">
+                                        <div class="card-body">
+                                            <img src="/theme_gab/static/src/img/icon_02.png" class="helpdesk-card-img-small img img-fluid d-block mx-auto"/>
+                                            <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit?ticket_type_id=6">
+                                                <button t-attf-class="btn btn-lg btn-primary btn-block btn-small-text mt8">Submit a Ticket (Change Request)</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <hr/>
+
+
+                            <div class="row justify-content-center mt32">
+                                <div class="col-lg-6">
+                                    <div class="card helpdesk-card">
+                                        <div class="card-body">
+                                            <img src="/theme_gab/static/src/img/icon_01.png" class="helpdesk-card-img-small img img-fluid d-block mx-auto"/>
+                                            <a id="submit-ticket" t-attf-href="/my/tickets">
+                                                <button t-attf-class="btn btn-lg btn-primary btn-block mt8">View my Tickets</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </t>
+                    </div>
+                    <div class="col-md-3" id="right-column">
+                        <div id="website_published_button" groups="helpdesk.group_helpdesk_manager" class="d-inline-block w-100 mb24">
+                            <t t-call="website.publish_management">
+                              <t t-set="object" t-value="team"/>
+                              <t t-set="publish_edit" t-value="True"/>
+                              <t t-set="action" t-value="'helpdesk.helpdesk_team_action'"/>
+                            </t>
+                        </div>
+                        <div class="oe_structure" id="oe_structure_website_helpdesk_team_2"/>
+                        <t t-if="team.description">
+                            <div class="card" id="about_team">
+                                <h3 class="card-header">Description</h3>
+                                <div class="card-body">
+                                    <span t-field="team.description"/>
+                                </div>
+                            </div>
+                        </t>
+                        <div class="oe_structure" id="oe_structure_website_helpdesk_team_3"/>
+                    </div>
+                </div>
+                <div class="oe_structure" id="oe_structure_website_helpdesk_team_4"/>
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>

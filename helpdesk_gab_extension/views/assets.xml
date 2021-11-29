@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom styles  -->
+    <template id="styles_helpdesk_gab" inherit_id="website.assets_frontend" name="Styles Helpdesk GAB">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/helpdesk_gab_extension/static/src/scss/styles.scss"/>
+        </xpath>
+    </template>
+
+</odoo>

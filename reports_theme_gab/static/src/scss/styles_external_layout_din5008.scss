@@ -1,0 +1,81 @@
+// Invoice Template (Din5008 Form-B)
+.din.header {
+    img {
+        max-width: 75mm;
+        position: absolute;
+        bottom: 0;
+        left: 140mm;
+    }
+}
+
+.din.article {
+    .return_address {
+        height: 17.7mm;
+        position: relative;
+    }
+    
+    .return_address_inside {
+        position: absolute;
+        bottom: 3mm;
+        left: 0;
+    }
+    
+    .invoice_address {
+        height: 45mm;
+        top: 0mm;
+        width: 100mm;
+    }
+    
+    .company_address {
+        left: 46mm;
+    }
+    
+    h2, .din .h2 {
+        font-size: 1.5rem;
+    }
+    
+    #total {
+        margin-bottom: 7mm;
+    }
+}
+
+
+
+
+// for the correct representation in the portal
+.o_in_iframe {
+    .din.header {
+        img {
+            left: 132mm;
+        }
+    }
+}
+
+.o_in_iframe .din.article {
+    .invoice_address {
+        left: 0;
+    }
+
+    .company_address {
+        left: 38mm;
+    }
+
+    .page {
+        left: 0;
+        width: auto;
+        margin-bottom: 15mm;
+    }
+    
+    #total {
+        margin-bottom: 0;
+    }
+}
+
+.o_in_iframe .din.footer {
+    left: 0;
+    width: auto;
+
+    .page_number {
+        display: none;
+    }
+}

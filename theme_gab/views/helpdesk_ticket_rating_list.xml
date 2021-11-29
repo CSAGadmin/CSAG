@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom Portal Template Content -->
+    <template id="helpdesk_ticket_rating_list_gab" inherit_id="helpdesk.index" name="Helpdesk Ticket Rating List GAB">
+
+        <!-- Replace Content -->
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+            <div id="wrap">
+                <div class="oe_structure" id="oe_structure_helpdesk_index_1"/>
+                <div class="container oe_website_rating_team mt-4">
+                    <!--<div class="row text-center">-->
+                        <h1>Teams</h1>
+                    <!--</div>-->
+                    <div class="oe_structure" id="oe_structure_helpdesk_index_2"/>
+                    <div class="row">
+                        <t t-foreach="teams" t-as="team">
+                            <div t-if="team.percentage_satisfaction != -1" class="col-md-6 col-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="caption">
+                                            <h4><t t-esc="team.name"/></h4>
+                                            <p t-if="team.percentage_satisfaction" class="text-muted">
+                                                Customer Satisfaction Ration: <t t-esc="team.percentage_satisfaction"/> %
+                                            </p>
+                                            <p t-if="team.alias_name and team.alias_domain" class="text-muted">
+                                                <i class="fa fa-envelope"/> Email: <t t-esc="team.alias_name"/>@<t t-esc="team.alias_domain"/>
+                                            </p>
+                                            <!--<div class="row">-->
+                                                <div class="col-lg-16 text-center">
+                                                    <h2><t t-esc="len(team.ticket_ids)"/></h2>
+                                                </div>
+                                            <!--</div>-->
+                                        </div>
+                                        <div class="caption">
+                                            <p>
+                                                <a t-att-href="'/helpdesk/rating/%s' % team.id" role="button" class="btn btn-primary btn-lg btn-block">
+                                                    <i class="fa fa-arrow-circle-right"/> See the feedbacks
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+                <div class="oe_structure" id="oe_structure_helpdesk_index_3"/>
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>
