@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- Custom scroll up button -->
+    <!--<template id="scroll_up_button_gab" inherit_id="website.layout" customize_show="True" active="True" name="Scroll Up Button">-->
+    <template id="scroll_up_button_gab" inherit_id="website.layout" name="Scroll Up Button GAB">
+
+        <!-- Add element -->
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <div id="scroll_up_settings"
+            data-scroll_name="scrollUp"
+            data-scroll_distance="300"
+            data-scroll_from="top"
+            data-scroll_speed="300"
+            data-easing_type="linear"
+            data-animation="slide"
+            data-animation_Speed="200"
+            data-scroll_trigger="false"
+            data-scroll_target="false"
+            data-scroll_text="&lt;i class='fa fa-chevron-circle-up' /&gt;"
+            data-scroll_title="false"
+            data-scroll_img="false"
+            data-active_overlay="false"
+            data-z_index="2147483647"/>
+        </xpath>
+    </template>
+
+</odoo>

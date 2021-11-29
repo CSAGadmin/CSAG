@@ -1,0 +1,123 @@
+<odoo>
+    <data>
+        <template id="tickets_followup" name="Helpdesk Tickets GAB" inherit_id="helpdesk.tickets_followup">
+            <xpath expr="." position="replace">
+                <t name="Template Helpdesk Tickets GAB" t-name="helpdesk.tickets_followup">
+                    <t t-call="portal.portal_layout">
+                        <t t-set="wrapwrap_classes" t-value="'o_portal_bg_dark'"/>
+
+                        <t t-set="o_portal_fullwidth_alert" groups="helpdesk.group_helpdesk_user">
+                            <t t-call="portal.portal_back_in_edit_mode">
+                                <t t-set="backend_url" t-value="'/web#return_label=Website&amp;model=helpdesk.ticket&amp;id=%s&amp;view_type=form' % (ticket.id)"/>
+                            </t>
+                        </t>
+
+                        <t t-call="portal.portal_record_layout">
+                            <t t-set="card_header">
+                                <div class="row no-gutters">
+                                    <div class="col-md">
+                                        <h5 class="mb-1 mb-md-0">
+                                            <span t-field="ticket.name"/>
+                                            <small class="text-muted"> (#<span t-field="ticket.id"/>)</small>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md text-md-right">
+                                        <small class="text-right">Status:</small>
+                                        <span t-field="ticket.stage_id.name" class=" badge badge-pill badge-info" title="Current stage of this ticket"/>
+                                    </div>
+                                </div>
+                            </t>
+                            <t t-set="card_body">
+                                <div class="row mb-4">
+                                    <strong class="col-lg-2">Reported on</strong>
+                                    <span class="col-lg-10" t-field="ticket.create_date" t-options='{"widget": "date"}'/>
+                                </div>
+                                <div class="row mb-4" t-if="ticket.team_id.portal_rating_url">
+                                    <strong class="col-lg-2">Managed by</strong>
+                                    <span class="col-lg-10">
+                                        <a t-att-href="'%s' % ticket.team_id.portal_rating_url">
+                                            <span t-field="ticket.team_id.name"/>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="row mb-4" t-if="ticket.partner_id">
+                                    <strong class="col-lg-2">Reported by</strong>
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col flex-grow-0 pr-3">
+                                                <img t-if="ticket.partner_id.image_1024" class="rounded-circle o_portal_contact_img" t-attf-src="data:image/png;base64,#{ticket.partner_id.image_1024}" alt="Contact"/>
+                                                <img t-else="" class="rounded-circle o_portal_contact_img" src="/web/static/src/img/user_menu_avatar.png" alt="Contact"/>
+                                            </div>
+                                            <div class="col pl-sm-0">
+                                                <div t-field="ticket.partner_id" t-options='{"widget": "contact", "fields": ["name", "email"], "no_marker": true}'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4" t-if="ticket.user_id">
+                                    <strong class="col-lg-2">Assigned to</strong>
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col flex-grow-0 pr-3">
+                                                <img t-if="ticket.user_id.image_1024" class="rounded-circle o_portal_contact_img" t-attf-src="data:image/png;base64,#{ticket.user_id.image_1024}" alt="Contact"/>
+                                                <img t-else="" class="rounded-circle o_portal_contact_img" src="/web/static/src/img/user_menu_avatar.png" alt="Contact"/>
+                                            </div>
+                                            <div class="col pl-sm-0">
+                                                <div t-field="ticket.user_id" t-options='{"widget": "contact", "fields": ["name", "email"], "no_marker": true}'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <strong class="col-lg-2">Description</strong>
+                                    <div t-if="ticket.description" class="col-lg-10" t-field="ticket.description"/>
+                                    <div t-else="" class="col-lg-10">
+                                        <em class="text-muted"><small>No description</small></em>
+                                    </div>
+                                </div>
+                            </t>
+                        </t>
+
+                        <div class="o_portal_messages_container mt32">
+                            <h4>Stage history</h4>
+
+                            <div t-if="not ticket.history_ids" class="alert alert-info">
+                                There are currently no history entries for this ticket.
+                            </div>
+
+                            <t t-if="ticket.history_ids" t-call="portal.portal_table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">Source Stage</th>
+                                        <th class="text-left">Destination Stage</th>
+                                        <th class="text-left">Begin</th>
+                                        <th class="text-left">End</th>
+                                    </tr>
+                                </thead>
+                                <t t-foreach="ticket.history_ids" t-as="hist">
+                                    <tr>
+                                        <td class="text-left"><span t-field="hist.stage_id.name"/></td>
+                                        <td class="text-left"><span t-field="hist.dest_stage_id.name"/></td>
+                                        <td class="text-left"><span t-field="hist.start_time"/></td>
+                                        <td class="text-left"><span t-field="hist.end_time"/></td>
+                                    </tr>
+                                </t>
+                            </t>
+                        </div>
+
+                        <div class="o_portal_messages_container mt32">
+                            <h4>Message and communication history</h4>
+                            <t t-call="portal.message_thread">
+                                <t t-set="token" t-value="ticket.access_token"/>
+                                <t t-set="object" t-value="ticket"/>
+                                <t t-set="pid" t-value="pid"/>
+                                <t t-set="hash" t-value="hash"/>
+                                <t t-set="disable_composer" t-value="ticket.stage_id.is_close"/>
+                            </t>
+                        </div>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

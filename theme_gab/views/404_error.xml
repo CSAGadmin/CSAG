@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom 404 error site -->
+    <!--<template id="404_error_gab" inherit_id="website.404" name="404 Error GAB">-->
+    <template id="404_error_gab" inherit_id="http_routing.404" name="404 Error GAB">
+
+        <!-- Add element -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container">
+                <div class="row error_container">
+                    <div class="col-md-6 oe_structure">
+                        <img src="/theme_gab/static/src/img/404-error.png" class="img img-fluid"/>
+                    </div>
+                    <div class="col-md-6 oe_structure error_message">
+                        <h1>404: Page not found!</h1>
+                        <p>The page you were looking for could not be found; it is possible you have typed the address incorrectly, but it has most probably been removed due to the recent website reorganisation.</p>
+                        <!--
+                        <p>Maybe you were looking for one of these popular pages?</p>
+                        <ul>
+                            <li><a href="/">Homepage</a></li>
+                            <li><a href="/contactus">Contact Us</a></li>
+                        </ul>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+
+</odoo>

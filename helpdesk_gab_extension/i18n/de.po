@@ -1,0 +1,319 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* helpdesk_gab_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-15 15:15+0000\n"
+"PO-Revision-Date: 2020-09-15 15:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<em class=\"text-muted\"><small>No description</small></em>"
+msgstr "<em class=\"text-muted\"><small>Keine Beschreibung</small></em>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<small class=\"text-right\">Status:</small>"
+msgstr "<small class=\"text-right\">Status:</small>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<strong class=\"col-lg-2\">Assigned to</strong>"
+msgstr "<strong class=\"col-lg-2\">Zugewiesen an</strong>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<strong class=\"col-lg-2\">Description</strong>"
+msgstr "<strong class=\"col-lg-2\">Beschreibung</strong>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<strong class=\"col-lg-2\">Managed by</strong>"
+msgstr "<strong class=\"col-lg-2\">Verwaltet von</strong>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<strong class=\"col-lg-2\">Reported by</strong>"
+msgstr "<strong class=\"col-lg-2\">Berichtet von</strong>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "<strong class=\"col-lg-2\">Reported on</strong>"
+msgstr "<strong class=\"col-lg-2\">Berichtete über</strong>"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.helpdesk_ticket_view_form_gab
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Begin"
+msgstr "Beginn"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model,name:helpdesk_gab_extension.model_res_partner
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Current stage of this ticket"
+msgstr "Aktuelle Bearbeitungsstufe dieses Tickets"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.helpdesk_ticket_view_form_gab
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Destination Stage"
+msgstr "Zielstufe"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__end_time
+msgid "Done At"
+msgstr "Erledigt am"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.helpdesk_ticket_view_form_gab
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "End"
+msgstr "Beendet"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model,name:helpdesk_gab_extension.model_helpdesk_gab_extension_history
+msgid "Helpdesk GAB Extension History"
+msgstr "Helpdesk GAB Extension History"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model,name:helpdesk_gab_extension.model_helpdesk_team
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_res_partner__helpdesk_team_id
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_res_users__helpdesk_team_id
+msgid "Helpdesk Team"
+msgstr "Helpdesk-Team"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model,name:helpdesk_gab_extension.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Kundendienst Ticket"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__history_ids
+msgid "History"
+msgstr "Historie"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Message and communication history"
+msgstr "Nachrichten- und Kommunikationshistorie"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:30
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+#, python-format
+msgid "Name"
+msgstr "Name"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:29
+#, python-format
+msgid "Newest"
+msgstr "Neuste"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:53
+#, python-format
+msgid "No Filter"
+msgstr "Keine Filter"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:67
+#, python-format
+msgid "None"
+msgstr "Keine"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:68
+#, python-format
+msgid "Own"
+msgstr "Eigene"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:34
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+#, python-format
+msgid "Priority Level"
+msgstr "Priorität"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:64
+#, python-format
+msgid "Priority Level - "
+msgstr "Priorität - "
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:31
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+#, python-format
+msgid "Ref"
+msgstr "Ref."
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__calendar_id
+msgid "Resource Calendar"
+msgstr "Resourcenkalender"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__deadline2
+msgid "Response Deadline"
+msgstr "Meldefrist"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__sla2_fail
+msgid "Response Failed SLA Policy"
+msgstr "SLA Richtlinie fehlgeschagen"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__sla2_id
+msgid "Response SLA Policy"
+msgstr "SLA Richtlinie"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__sla2_name
+msgid "Response SLA Policy name"
+msgstr "SLA Richtlinienname"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_ticket__sla2_active
+msgid "Response SLA active"
+msgstr "SLA Richtlinie Aktiv"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__user_id
+msgid "Responsible User"
+msgstr "Manager Veranstaltung"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:38
+#, python-format
+msgid "Search <span class=\"nolabel\"> (in Content)</span>"
+msgstr "Suche <span class=\"nolabel\"> (in Inhalt)</span>"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__stage_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.helpdesk_ticket_view_form_gab
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Source Stage"
+msgstr "Anfangsstufe"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__dest_stage_id
+msgid "Stage"
+msgstr "Stufe"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:56
+#, python-format
+msgid "Stage - "
+msgstr "Stufe - "
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.helpdesk_ticket_view_form_gab
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "Stage history"
+msgstr "Stufenhistorie"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__start_time
+msgid "Start At"
+msgstr "Start am"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:32
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+#, python-format
+msgid "Status"
+msgstr "Status"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__helpdesk_ticket_id
+msgid "Support Ticket"
+msgstr "Support Ticket"
+
+#. module: helpdesk_gab_extension
+#: model:ir.model.fields,field_description:helpdesk_gab_extension.field_helpdesk_gab_extension_history__team_id
+msgid "Team"
+msgstr "Team"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+msgid "There are currently no Tickets for your account."
+msgstr "Keine Tickets vorhanden"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.tickets_followup
+msgid "There are currently no history entries for this ticket."
+msgstr "Keine Historie vorhanden"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.ticket_submit
+msgid "Ticket Type"
+msgstr "Tickettyp"
+
+#. module: helpdesk_gab_extension
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+msgid "Tickets GAB"
+msgstr "Tickets GAB"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:33
+#: model_terms:ir.ui.view,arch_db:helpdesk_gab_extension.portal_helpdesk_ticket
+#, python-format
+msgid "Type"
+msgstr "Typ"
+
+#. module: helpdesk_gab_extension
+#: code:addons/helpdesk_gab_extension/controllers/portal.py:58
+#, python-format
+msgid "Type - "
+msgstr "Typ - "
+

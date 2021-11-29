@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_helpdesk_gab_extension_history,helpdesk_gab_extension.history,model_helpdesk_gab_extension_history,helpdesk.group_helpdesk_user,1,1,1,1
+access_helpdesk_ticket_type_portal,helpdesk.ticket.type.portal,helpdesk.model_helpdesk_ticket_type,base.group_portal,1,0,0,0
+access_helpdesk_sla_portal,helpdesk.sla.portal,helpdesk.model_helpdesk_sla,base.group_portal,1,0,0,0
+access_helpdesk_team_portal,helpdesk.team.portal,helpdesk.model_helpdesk_team,base.group_portal,1,0,0,0
+access_helpdesk_team,helpdesk.team.user,model_helpdesk_team,helpdesk.group_helpdesk_user,1,0,0,0

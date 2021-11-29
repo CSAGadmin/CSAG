@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom Portal Template Content -->
+    <template id="ticket_submited_gab" inherit_id="website_helpdesk_form.ticket_submited" name="Ticket Received GAB">
+
+        <!-- Replace Content -->
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="container mt-4">
+                    <div clas="row">
+                        <t t-if="request.session.get('form_builder_model_model', '') == 'helpdesk.ticket'">
+                            <t t-set="ticket" t-value="request.website._website_form_last_record().sudo()"/>
+                        </t>
+                        <h1 class="text-center"><i class="fa fa-check-circle fa-2x text-success" role="img" aria-label="Success"/></h1>
+                        <h1 class="text-center">Thank you for submitting your issue.</h1>
+                        <h2 class="text-center mb-4">Our team will get right on it!</h2>
+                        <t t-if="ticket">
+                            <h3 class="text-center mb-5">Your Ticket Number is <a t-if="request.session.uid" t-attf-href="/helpdesk/ticket/#{ticket.id}">#<span t-field="ticket.id"/></a><t t-if="not request.session.get('uid')">#<span t-field="ticket.id"/></t>.</h3>
+                        </t>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>

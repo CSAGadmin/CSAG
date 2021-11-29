@@ -1,0 +1,52 @@
+<odoo>
+ <data>
+  <template id="portal_helpdesk_ticket" name="Helpdesk Ticket GAB" inherit_id="helpdesk.portal_helpdesk_ticket">
+    <xpath expr="." position="replace">
+      <t name="Template Helpdesk Ticket GAB" t-name="helpdesk.portal_helpdesk_ticket">
+        <t t-call="portal.portal_layout">
+          <t t-set="breadcrumbs_searchbar" t-value="True"/>
+          <t t-call="portal.portal_searchbar">
+            <t t-set="title">Tickets GAB</t>
+          </t>
+          <div t-if="not tickets" class="alert alert-info">
+            There are currently no Tickets for your account.
+          </div>
+          <t t-if="tickets" t-call="portal.portal_table">
+            <thead>
+              <tr>
+                  <th class="text-right">Ref</th>
+                  <th class="text-left w-100">Name</th>
+                  <th class="text-left">Priority Level</th>
+                  <th class="text-left">Type</th>
+                  <th class="text-left">Status</th>
+              </tr>
+            </thead>
+            <t t-foreach="tickets" t-as="ticket">
+              <tr>
+                  <td class="text-right"><a t-attf-href="/helpdesk/ticket/#{ticket.id}"><small>#</small><t t-esc="ticket.id"/></a></td>
+                  <td class="text-left ticket-table-subject-cell"><a t-attf-href="/helpdesk/ticket/#{ticket.id}" t-att-title="ticket.name"><span t-esc="ticket.name"/></a></td>
+                  <td class="text-center">
+                    <span t-if="ticket.priority == '3'">
+                      <span class="fa fa-star stars_gold"></span><span class="fa fa-star stars_gold"></span><span class="fa fa-star stars_gold" ></span>
+                    </span>
+                    <span t-elif="ticket.priority == '2'">
+                      <span class="fa fa-star stars_gold"></span><span class="fa fa-star stars_gold"></span><span class="fa fa-star-o stars_gray"></span>
+                    </span>
+                    <span t-elif="ticket.priority == '1'">
+                      <span class="fa fa-star stars_gold"></span><span class="fa fa-star-o stars_gray"></span><span class="fa fa-star-o stars_gray"></span>
+                    </span>
+                    <span t-else="">
+                      <span class="fa fa-star-o stars_gray"></span><span class="fa fa-star-o stars_gray"></span><span class="fa fa-star-o stars_gray"></span>
+                    </span>
+                  </td>
+                  <td class="text-left"><span t-esc="ticket.ticket_type_id.name"/></td>
+                  <td class="text-left"><span t-esc="ticket.stage_id.name"/></td>
+              </tr>
+            </t>
+          </t>
+        </t>
+      </t>
+    </xpath>
+  </template>
+ </data>
+</odoo>

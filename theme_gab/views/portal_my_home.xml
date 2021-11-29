@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom Portal Template Header -->
+    <template id="portal_my_home_gab" inherit_id="portal.portal_my_home" name="Portal My Home GAB" priority="100">
+
+        <!-- Add element -->
+        <xpath expr="//div[hasclass('o_portal_my_home')]" position="replace">
+
+            <div class="o_portal_my_home">
+                <div class="oe_structure" id="oe_structure_portal_my_home_1"/>
+                <h1>Your Documents</h1>
+                <div class="o_portal_docs list-group">
+                    <t t-if="ticket_count" t-call="portal.portal_docs_entry">
+                        <t t-set="title">Tickets</t>
+                        <t t-set="url" t-value="'/my/tickets'"/>
+                        <t t-set="count" t-value="ticket_count"/>
+                    </t>
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2"/>
+
+        </xpath>
+
+    </template>
+
+</odoo>

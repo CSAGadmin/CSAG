@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom styles  -->
+    <template id="styles_external_layout_din5008_gab" inherit_id="web.report_assets_common">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/reports_theme_gab/static/src/scss/styles_external_layout_din5008.scss"/>
+        </xpath>
+    </template>
+
+</odoo>

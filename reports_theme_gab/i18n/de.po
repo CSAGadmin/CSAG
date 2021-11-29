@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* reports_theme_gab
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-26 17:08+0000\n"
+"PO-Revision-Date: 2020-11-26 17:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: reports_theme_gab
+#: model_terms:ir.ui.view,arch_db:reports_theme_gab.external_layout_din5008_gab
+msgid "<span>Fon:</span>"
+msgstr "<span>Tel:</span>"
+
+#. module: reports_theme_gab
+#: model_terms:ir.ui.view,arch_db:reports_theme_gab.external_layout_din5008_gab
+msgid "<span>INN:</span> <span>990 956 87 28</span>"
+msgstr "<span>INN:</span> <span>990 956 87 28</span>"
+
+#. module: reports_theme_gab
+#: model_terms:ir.ui.view,arch_db:reports_theme_gab.external_layout_din5008_gab
+msgid "<span>KPP:</span> <span>997 789 001</span>"
+msgstr "<span>KPP:</span> <span>997 789 001</span>"
+
+#. module: reports_theme_gab
+#: model_terms:ir.ui.view,arch_db:reports_theme_gab.external_layout_din5008_gab
+msgid "<span>Mail:</span>"
+msgstr "<span>Mail:</span>"
+
+#. module: reports_theme_gab
+#: model_terms:ir.ui.view,arch_db:reports_theme_gab.external_layout_din5008_gab
+msgid ""
+"Page:\n"
+"                        <span class=\"page\"/>\n"
+"                        of\n"
+"                        <span class=\"topage\"/>"
+msgstr "Seite:\n"
+"                        <span class=\"page\"/>\n"
+"                        von\n"
+"                        <span class=\"topage\"/>"

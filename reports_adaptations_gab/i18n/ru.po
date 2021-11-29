@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* reports_adaptations_gab
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-26 19:45+0000\n"
+"PO-Revision-Date: 2020-11-26 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+"                            <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr "<span groups=\"account.group_show_line_subtotals_tax_excluded\">сумма</span>\n"
+"                            <span groups=\"account.group_show_line_subtotals_tax_included\">Вместе</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<span>Description</span>"
+msgstr "<span>Описание</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<span>Disc.%</span>"
+msgstr "<span>Скидка.%</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<span>Quantity</span>"
+msgstr "<span>Количество</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<span>Source Document</span>"
+msgstr "<span>Исходный Документ</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<span>Unit Price</span>"
+msgstr "<span>Цена за ед.</span>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Итог</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Код заказчика:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Оплатить до:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Expiration:</strong>"
+msgstr "<strong>Срок действия:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Дата счёта:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Дата Заказа:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Дата предложения:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Основание:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_invoice_document_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Продавец:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Промежуточный итог</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Total</strong>"
+msgstr "<strong>Итого</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Ваша ссылка:</strong>"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "Amount"
+msgstr "Сумма"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "Description"
+msgstr "Описание"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "Quantity"
+msgstr "Количество"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "Total Price"
+msgstr "Итоговая цена"
+
+#. module: reports_adaptations_gab
+#: model_terms:ir.ui.view,arch_db:reports_adaptations_gab.report_saleorder_document_gab
+msgid "Unit Price"
+msgstr "Цена за ед."

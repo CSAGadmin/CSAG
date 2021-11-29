@@ -1,0 +1,205 @@
+// Navbar
+header .navbar-brand.logo img {
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar {
+    border-bottom: 1px solid darken($menu, 5%);
+    line-height: $line-height-base;
+}
+.topmenu_language_switcher {
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+.topmenu_language_add_language {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    display: block;
+}
+
+
+
+// Body
+body {
+    line-height: 2;
+    background: $body-bg !important;
+    color: $body-color !important;
+}
+#wrapwrap.o_portal {
+    line-height: 2;
+    background: $body-bg !important;
+    color: $body-color !important;
+}
+
+
+// Footer
+.o_footer {
+    /*background-color: $footer !important;*/
+    color: $footer-text-color !important;
+    line-height: 1.5;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.35);
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+        color: $footer-h1-h6-color !important;
+    }
+}
+.footer-company-details {
+    .fa {
+        width: 25px;
+    }
+
+    .footer-company-zip,
+    .footer-company-country {
+        margin-left: 25px;
+    }
+}
+.footer-social {
+    .fa {
+        margin-right: 10px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .fa-xing-square {
+        color: #006567;
+    }
+    .fa-linkedin-square {
+        color: #0073b0;
+    }
+    .fa-facebook-square {
+        color: #38529a;
+    }
+}
+.footer_awards {
+    background: $footer-awards-bg-color;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.o_footer_copyright,
+#wrapwrap.o_portal .o_footer_copyright {
+    background-color: $footer-copyright-bg-color !important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .text-muted {
+        color: $footer-text-color !important;
+    }
+
+    .js_language_selector {
+        margin-left: 20px;
+    }
+
+    .o_not_editable {
+        display: none;
+    }
+}
+.footer_imprint_privacy { 
+    a {
+        margin: 0 10px;
+    }
+}
+
+
+
+// Scroll up button
+#scrollUp {
+    bottom: 0px;
+    right: 20px;
+    padding: 10px 10px 6px 10px;
+    background-color: $primary;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    .fa {
+        font-size: 2.5em;
+        color: #ffffff;
+    }
+}
+
+
+
+// My Portal
+.o_my_sidebar {
+    margin-top: 50px;
+}
+.o_my_contact,
+.o_portal_my_details {
+    padding: 10px;
+    border-radius: $border-radius;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.o_portal_invoice_sidebar {
+    .card-footer {
+        display: none !important;
+    }
+}
+
+
+
+// Helpdesk
+#right-column {
+    margin-top: 28px;
+}
+.helpdesk-card {
+    margin-bottom: 20px;
+    
+    .helpdesk-card-img {
+        max-height: 150px;
+    }
+    .helpdesk-card-img-small {
+        max-height: 100px;
+    }
+}
+.btn-small-text {
+    font-size: 0.9rem !important;
+}
+
+
+
+// Error-Pages
+.error_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.error_message {
+    padding-top: 65px;
+
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.0rem;
+    }
+}
+
+
+
+
+// WebSite Admin-Toolbar
+.o_main_navbar {
+    border-bottom: 1px solid $footer-copyright-bg-color;
+    background-color: $footer-copyright-bg-color;
+}
+// Class to hide elements when the web page editor is active
+.editor_enable .hide_element_in_editor {
+    display: none;
+}
+
+
+
+
+// Default overwrites
+hr {
+    padding: 4px 0;
+}
+.o_portal_wrap address span[itemprop="name"] {
+    font-weight: bold;
+}

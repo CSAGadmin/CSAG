@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom Reports Template (DIN5008) -->
+    <template id="external_layout_din5008_gab" inherit_id="l10n_de.external_layout_din5008">
+
+        <!-- Replace Header -->
+        <xpath expr="//div[hasclass('header')]" position="replace">
+
+            <div class="header din text-right position-relative">
+                <!--<img class="position-absolute" t-if="company.logo" t-att-src="image_data_uri(company.logo)"/>-->
+                <img class="position-absolute" src="/reports_theme_gab/static/src/img/reports_logo.png"/>
+            </div>
+
+        </xpath>
+
+        <!-- Replace Content -->
+        <xpath expr="//div[hasclass('article')]" position="replace">
+
+            <div class="article din" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id">
+
+                <div class="header_address">
+                    <div name="invoice_address" class="invoice_address">
+                        <t t-if="address">
+                            <div class="return_address">
+                                <div class="return_address_inside">
+                                    <div style="font-size:8px;"><span t-field="company.name"/> - <span t-field="company.street"/> - <span t-field="company.zip"/> <span t-field="company.city"/> - <span t-field="company.country_id"/></div>
+                                    <div style="border-bottom: 1px solid black; margin-top: 1mm;"/>
+                                </div>
+                            </div>
+                            <t t-raw="address"/>
+                        </t>
+                    </div>
+
+                    <div class="company_address" style="font-size:12px;">
+                        <div>
+                            <strong t-field="company.partner_id.name"/>
+                        </div>
+                        <div t-field="company.partner_id.street"/>
+                        <div>
+                            <span t-field="company.partner_id.zip"/> <span t-field="company.partner_id.city"/>
+                        </div>
+                        <div t-field="company.partner_id.country_id"/>
+                        <div>
+                            <span>Fon:</span> <span t-field="company.partner_id.phone"/>
+                        </div>
+                        <div>
+                            <span>Mail:</span> <span t-field="company.partner_id.email"/>
+                        </div>
+
+                        <t t-if="o">
+                            <!--<span t-esc="o._name"/>--><!-- GET REPORT-TYPE -->
+                            <t t-if="o._name == 'account.move' or o._name == 'sale.order'">
+                                <t t-if="o.partner_id.lang == 'ru_RU'">
+                                    <div style="margin-top:10px">
+                                        <span>INN:</span> <span>990 956 87 28</span>
+                                    </div>
+                                    <div>
+                                        <span>KPP:</span> <span>997 789 001</span>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+
+                    </div>
+                </div>
+                    <t t-raw="0"/>
+            </div>
+
+        </xpath>
+
+        <!-- Replace Footer -->
+        <xpath expr="//div[hasclass('footer')]" position="replace">
+
+            <div class="footer o_background_footer din">
+                <div class="text-right page_number" style="font-size:12px;">
+                    <div class="text-muted">
+                        Page:
+                        <span class="page"/>
+                        of
+                        <span class="topage"/>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid #495057; margin-bottom: 2mm;"/>
+                <div class="text-center" style="font-size:9px;" t-field="company.report_footer"/>
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>

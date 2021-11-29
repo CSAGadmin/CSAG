@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom footer -->
+    <template id="footer_imprint_privacy_gab" inherit_id="website.layout" name="Footer Imprint/Privacy GAB">
+
+        <!-- Assign an id -->
+        <!--
+        <xpath expr="//div[@id='wrapwrap']/div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="id">gab_footer_imprint_privacy</attribute>
+        </xpath>
+        -->
+
+        <!-- Add element -->
+        <xpath expr="//div[@id='wrapwrap']/footer/div[hasclass('o_footer_copyright')]/div[hasclass('container')]/div[hasclass('row')]/div" position="after">
+
+            <div class="col-lg-6 text-center text-lg-right footer_imprint_privacy">
+                <a href="https://www.gab.de/en/impressum/">Imprint</a> | <a href="https://www.gab.de/en/datenschutz/">Privacy</a>
+            </div>
+        </xpath>
+
+    </template>
+
+</odoo>

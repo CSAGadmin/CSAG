@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Custom footer Copyright -->
+    <template id="footer_copyright_gab" inherit_id="website.layout" name="Footer Copyright GAB">
+
+        <!-- Add element -->
+        <xpath expr="//div[@id='wrapwrap']/footer/div[hasclass('o_footer_copyright')]/div[hasclass('container')]/div[hasclass('row')]/div" position="replace">
+            <div class="col-lg-6 text-muted text-center text-lg-left">
+                <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name">Company name</span>
+                <t t-call="website.language_selector"/>
+            </div>
+        </xpath>
+
+    </template>
+
+</odoo>

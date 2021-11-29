@@ -1,0 +1,185 @@
+<odoo>
+  <data>
+    <record id="view_partner_form_inherit_helpdesk_gab" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.helpdesk.gab</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="groups_id" eval="[(4, ref('helpdesk.group_helpdesk_user'))]"/>
+        <field name="priority" eval="8"/>        
+        <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <field name="helpdesk_team_id"/>
+            </field>
+            <!-- <xpath expr="//page[1]" position="inside">
+	            <group>
+                    <field name="helpdesk_team_id"/>
+                </group>
+            </xpath> -->
+        </field>
+    </record>
+
+    <record id="helpdesk_ticket_view_form_gab" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.gab</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <field name="sla_deadline" position="after">
+                <field name="deadline2" readonly="1" attrs="{'invisible': [('deadline2', '=', False)]}"/>
+            </field>
+
+            <xpath expr="//field[@name='description']" position="replace">
+                <notebook>
+                    <page string="Description">
+                        <field name="description" placeholder="Description of the ticket..."/>
+                    </page>
+                    <page string="Stage history">
+                        <field name="history_ids">
+                            <tree>
+                                <field name="stage_id" string="Source Stage"/>
+                                <field name="dest_stage_id" string="Destination Stage"/>
+                                <field name="start_time" string="Begin"/>
+                                <field name="end_time" string="End"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+
+            <!-- <xpath expr="//field[@name='description']" position="after">
+                <notebook>
+                    <page string="Stage history">
+                        <field name="history_ids">
+                            <tree>
+                                <field name="stage_id" string="Source Stage"/>
+                                <field name="dest_stage_id" string="Destination Stage"/>
+                                <field name="start_time" string="Begin"/>
+                                <field name="end_time" string="End"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath> -->
+
+            <!-- TODO if no pages exist problem !!! -->
+            <!-- <xpath expr="//page[last()]" position="after">
+                <page string="Stage history">
+                    <field name="history_ids">
+                        <tree>
+                            <field name="stage_id" string="Source Stage"/>
+                            <field name="dest_stage_id" string="Destination Stage"/>
+                            <field name="start_time" string="Begin"/>
+                            <field name="end_time" string="End"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath> -->
+        </field>
+    </record>
+
+    <!-- <record id="helpdesk_ticket_history_view_form" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.history.form</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="stage_id"/>
+            </tree>
+        </field>
+    </record> -->
+
+    <!-- <record id="helpdesk_ticket_gab_history_view_graph_main" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.graph</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <graph string="Helpdesk Tickets" type="line" stacked="True">
+                <field name="create_date" type="row" interval="day"/>
+                <field name="stage_id" type="col"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="helpdesk_ticket_gab_history_view_pivot_main" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.pivot</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <pivot string="Helpdesk Tickets">
+                <field name="create_date" type="row" interval="day"/>
+                <field name="stage_id" type="col"/>
+            </pivot>
+        </field>
+    </record> -->
+
+    <!-- <record id="helpdesk_ticket_gab_history_view_graph_analysis" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.graph.analysis</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <graph string="Helpdesk Ticket Analysis" stacked="True">
+                <field name="team_id" type="row"/>
+                <field name="stage_id" type="col"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="helpdesk_ticket_gab_history_view_pivot_analysis" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.pivot.analysis</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <pivot string="Helpdesk Ticket Analysis" disable_linking="True">
+                <field name="team_id" type="row"/>
+                <field name="stage_id" type="col"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="helpdesk_ticket_gab_history_analysis_action" model="ir.actions.act_window">
+       <field name="name">Helpdesk Ticket History Analysis</field>
+       <field name="res_model">helpdesk_gab_extension.history</field>
+       <field name="view_type">form</field>
+       <field name="view_mode">pivot,graph</field>
+        <field name="view_ids"
+               eval="[(5, 0, 0),
+                      (0, 0, {'view_mode': 'graph', 'view_id': ref('helpdesk_ticket_gab_history_view_graph_analysis')}),
+                      (0, 0, {'view_mode': 'pivot', 'view_id': ref('helpdesk_ticket_gab_history_view_pivot_analysis')})]"/>
+    </record>
+
+    <menuitem id="helpdesk_ticket_gab_history_report_menu" name="History" action="helpdesk_ticket_gab_history_analysis_action"
+        sequence="10" parent="helpdesk.helpdesk_ticket_report_menu_main"
+        groups="helpdesk.group_helpdesk_manager"/> -->
+
+    <!-- <record id="helpdesk_ticket_gab_history_team_analysis_action" model="ir.actions.act_window">
+        <field name="name">Ticket History Analysis</field>
+        <field name="res_model">helpdesk_gab_extension.history</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="view_ids"
+               eval="[(5, 0, 0),
+                      (0, 0, {'view_mode': 'graph', 'view_id': ref('helpdesk_ticket_gab_history_view_graph_analysis')}),
+                      (0, 0, {'view_mode': 'pivot', 'view_id': ref('helpdesk_ticket_gab_history_view_pivot_analysis')})]"/>
+        <field name="search_view_id" ref="helpdesk_ticket_view_search_analysis"/>
+        <field name="context">{'search_default_team_id': active_ids, 'search_default_is_open': True}</field>
+    </record> -->
+
+    <!-- <record id="helpdesk_gab_history_team_view_pivot_analysis" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.pivot</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <pivot string="Performance Analysis" disable_linking="True">
+                <field name="stage_id" type="col"/>
+                <field name="name"/>
+                <field name="end_date" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="helpdesk_gab_history_team_view_graph_analysis" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.gab.history.graph</field>
+        <field name="model">helpdesk_gab_extension.history</field>
+        <field name="arch" type="xml">
+            <graph string="Performance Analysis" stacked="True">
+                <field name="stage_id" type="col"/>
+                <field name="team_id" type="row"/>
+                <field name="end_date" type="measure"/>
+            </graph>
+        </field>
+    </record> -->
+  </data>
+</odoo>
